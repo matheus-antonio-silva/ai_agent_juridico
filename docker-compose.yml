@@ -1,0 +1,14 @@
+services:
+
+  agente-juridico:
+
+    build:
+      context: .
+
+    container_name: agente-juridico-api
+
+    ports:
+      - "8000:8000"
+
+    env_file:
+      - .env
